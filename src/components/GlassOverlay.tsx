@@ -14,6 +14,7 @@ export function GlassOverlay({ started, drawing, mode, season, onClear, onModeCh
     <button className="mode-button" type="button" onClick={onModeChange} title="Change shader mode"><ModeIcon size={13} strokeWidth={1.7} />{getShaderMode(mode).label}</button>
     <span className="dock-divider" aria-hidden="true" />
     <button className="season-button" type="button" onClick={onSeasonChange}>{season}</button>
+    <a className="credits-link" href="/credits.html">credits</a>
     <button className="clear-icon" type="button" aria-label="Clear flowers" title="Clear flowers" onClick={onClear}><Trash2 size={15} strokeWidth={1.7} /></button>
   </aside>
 }
